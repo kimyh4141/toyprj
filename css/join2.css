@@ -38,17 +38,39 @@ a {
 .main {
   grid-area: main;
 }
+.main .main_group {
+  padding: 5px;
+}
 .main .id {
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
-input {
+.main .id .input_id {
   width: 100%;
-  padding: 0;
-  border: 0;
-  height: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+  /* height: 51px;
+  border: solid 1px #dadada;
+  padding: 10px 110px 10px 14px;
+  background: #fff; */
 }
+.main .id .input_id input {
+  /* width: 100%;
+  height: 29px;
+  padding-right: 25px;
+  line-height: 29px;
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  opacity: 0; */
+  width: 100%;
+  border: 0;
+  padding: 0;
+  height: 29px;
+  /* margin-left: 10px;
+   */
+}
+
 .footer {
   grid-area: footer;
 }

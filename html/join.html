@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./join.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      * {
+        /* outline: 1px solid red; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="ac">
+        <div class="top">
+          <h1>회원정보 입력</h1>
+        </div>
+      </div>
+      <div id="bc">
+        <div class="bottom">
+          <p>회원 가입을 위해 필요한 정보를 입력해주세요.</p>
+        </div>
+      </div>
+      <div id="cc">
+        <div class="log">
+          <div class="id">이름</div>
+          <div class="input">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+        </div>
+        <div class="log">
+          <div class="id">생년월일</div>
+          <div class="input">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+        </div>
+        <div class="log">
+          <div class="id">성별</div>
+          <div class="choice">
+            <select>
+              <option value="">선택</option>
+              <option value="남자">남자</option>
+              <option value="여자">여자</option>
+            </select>
+          </div>
+        </div>
+        <div class="log">
+          <div class="id">휴대폰 번호</div>
+          <div class="input">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+        </div>
+      </div>
+      <div id="dc">
+        <div class="dc">필수항목</div>
+        <div>
+          <span class="material-symbols-outlined" style="font-size: 20px"
+            >Done</span
+          >
+          필수입력항목
+        </div>
+      </div>
+      <div id="ec">
+        <div class="log">
+          <div class="id">
+            아이디
+            <span class="material-symbols-outlined" style="font-size: 20px"
+              >Done</span
+            >
+          </div>
+          <div class="idInput">
+            <input
+              type="text"
+              name="id"
+              onkeydown="inputIdCheck()"
+              style="border: 0 solid black"
+            />
+          </div>
+          <div class="doubleChk">
+            <button
+              type="button"
+              onclick="fn_dbCheckId()"
+              name="dbCheckId"
+              class="checkId"
+            >
+              중복확인
+            </button>
+          </div>
+        </div>
+
+        <div class="log">
+          <div class="id">
+            비밀번호
+            <span class="material-symbols-outlined" style="font-size: 20px"
+              >Done</span
+            >
+          </div>
+          <div class="pwInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+        </div>
+
+        <div class="log">
+          <div class="id">
+            비밀번호 확인
+            <span class="material-symbols-outlined" style="font-size: 20px"
+              >Done</span
+            >
+          </div>
+          <div class="pwInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+        </div>
+
+        <div class="log">
+          <div class="id">
+            이메일
+            <span class="material-symbols-outlined" style="font-size: 20px"
+              >Done</span
+            >
+          </div>
+          <div class="emailInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+          <div class="email">@</div>
+          <div class="emailInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+          <div class="choice">
+            <select>
+              <option value="">직접입력</option>
+              <option value="naver.com">네이버</option>
+              <option value="gmail.com">구글</option>
+              <option value="nate.com">네이트</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="fc">선택 항목</div>
+      <div id="gc">
+        <div class="id">
+          <div class="sel">주소</div>
+          <div class="adInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+          <div class="doubleChk">
+            <button>우편번호 찾기</button>
+          </div>
+        </div>
+        <div class="id">
+          <div class="sel"></div>
+          <div class="adInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+        </div>
+        <div class="id">
+          <div class="sel">자택 전화</div>
+          <div class="choice">
+            <select>
+              <option value="">02</option>
+              <option value="울산">052</option>
+              <option value="부산">051</option>
+              <option value="대구">053</option>
+            </select>
+          </div>
+          <div class="numInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+          <div class="numInput">
+            <input type="text" style="border: 0 solid black" />
+          </div>
+        </div>
+        <div class="id">
+          <div class="sel">회원가입 경로</div>
+          <div>
+            <div class="que">
+              <input type="text" style="border: 0 solid black" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hc"><button>가입하기</button></div>
+    </div>
+  </body>
+</html>

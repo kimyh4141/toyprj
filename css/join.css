@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* reset css */
+html,
+body,
+ul,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* layout */
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70px 30px auto 50px auto 50px auto 70px;
+  grid-template-areas:
+    '.      ac      .'
+    '.      bc     . '
+    '.      cc     . '
+    '.      dc     . '
+    '.      ec     . '
+    '.      fc     . '
+    '.      gc     . '
+    '.      hc     . ';
+}
+
+#ac {
+  grid-area: ac;
+  /* align-items: center; */
+  text-align: center;
+}
+
+#bc {
+  grid-area: bc;
+  text-align: center;
+  color: rgb(146, 143, 143);
+}
+
+#bc .bottom {
+  margin-top: 5px;
+}
+#cc {
+  grid-area: cc;
+  outline: 1px solid black;
+  outline-width: 2px;
+  border-radius: 1%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#cc .log {
+  display: flex;
+  width: 100%;
+}
+#cc .log .id {
+  width: 25%;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+}
+
+#cc .log .input {
+  width: 80%;
+}
+#cc .log .input input {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+#cc .log .choice {
+  width: 80%;
+}
+#cc .log .choice select {
+  -webkit-appearance: none;
+  width: 70px;
+  height: 40px;
+  text-align-last: center;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
+  border: none;
+}
+#dc {
+  grid-area: dc;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+#dc .dc {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.material-symbols-outlined {
+  color: rgb(231, 38, 38);
+}
+
+#dc div:nth-of-type(2) {
+  display: flex;
+  margin-left: 10px;
+  color: rgb(146, 143, 143);
+}
+
+#ec {
+  grid-area: ec;
+  /* display: flex; */
+  outline: 1px solid black;
+  outline-width: 2px;
+  border-radius: 1%;
+}
+
+/* #ec .log .; */
+.log {
+  display: flex;
+  width: 100%;
+}
+#ec .log .id {
+  width: 25%;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+}
+#ec .log .idInput {
+  width: 60%;
+}
+#ec .log .idInput input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-left: 10px;
+}
+#ec .log .doubleChk {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; /*수평 정렬*/
+  align-content: center;
+  width: 20%;
+}
+#ec .log .doubleChk button {
+  /* height: 60%; */
+  padding: 0;
+  margin: 0;
+}
+#ec .log .pwInput {
+  width: 70%;
+}
+#ec .log .pwInput input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  padding-left: 10px;
+}
+#ec .log .email {
+  padding: 10px;
+}
+#ec .log .emailInput {
+  width: 29%;
+}
+#ec .log .emailInput input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-left: 10px;
+}
+#ec .log .choice {
+  width: 20;
+}
+#ec .log .choice {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; /*수평 정렬*/
+  align-content: center;
+  width: 14%;
+}
+#fc {
+  grid-area: fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 20px;
+}
+#gc {
+  grid-area: gc;
+  outline: 1px solid black;
+  outline-width: 2px;
+  border-radius: 1%;
+}
+
+#gc .id {
+  display: flex;
+  width: 100%;
+}
+#gc .id .sel {
+  width: 25%;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+}
+#gc .id .adInput {
+  width: 60%;
+}
+#gc .id .adInput input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-left: 10px;
+}
+#gc .id .doubleChk {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; /*수평 정렬*/
+  align-content: center;
+  width: 20%;
+}
+#gc .id .choice select {
+  -webkit-appearance: none;
+  width: 70px;
+  height: 40px;
+  text-align-last: center;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
+  border: none;
+}
+
+#hc {
+  grid-area: hc;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#hc button {
+  background-color: blueviolet;
+  color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 20px; /* 테두리선 둥굴게*/
+  width: 150px;
+  height: 40px;
+}
+
+#cc .log:nth-of-type(1),
+#cc .log:nth-of-type(2),
+#cc .log:nth-of-type(3),
+#ec .log:nth-of-type(1),
+#ec .log:nth-of-type(2),
+#ec .log:nth-of-type(3),
+#gc .id:nth-of-type(1),
+/* #gc .id:nth-of-type(2), */
+#gc .id:nth-of-type(3) {
+  border-bottom: 1px solid black;
+}
+
+#ec .log button {
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  list-style: tin;
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* reset css */
+html,
+body,
+ul,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* layout */
+.wrap {
+  display: grid;
+  grid-template-columns: 3fr 2.5fr 3fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    '.  header  .'
+    '.  main    .'
+    '.  footer  .';
+  background-color: rgb(243, 243, 243);
+}
+.header {
+  grid-area: header;
+  text-align: center;
+  color: chartreuse;
+  font-weight: bold;
+  font-size: 25px;
+}
+.main {
+  grid-area: main;
+}
+.main .id {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  height: 100%;
+}
+.footer {
+  grid-area: footer;
+}
+.footer .btn_join button {
+  width: 100%;
+  font-size: 20px;
+  background-color: chartreuse;
+  color: white;
+  border: none;
+  padding: 5px;
+}

@@ -41,6 +41,9 @@ a {
 .main .main_group {
   padding: 5px;
 }
+input:focus {
+  outline: none;
+}
 .main .id {
   width: 100%;
 }
@@ -53,23 +56,138 @@ a {
   border: solid 1px #dadada;
   padding: 10px 110px 10px 14px;
   background: #fff; */
+  background-color: white;
 }
 .main .id .input_id input {
-  /* width: 100%;
+  display: block;
+  position: relative;
+  width: 100%;
   height: 29px;
-  padding-right: 25px;
   line-height: 29px;
   border: none;
-  background: #fff;
-  font-size: 15px;
-  opacity: 0; */
+  box-sizing: border-box;
+
   width: 100%;
   border: 0;
   padding: 0;
   height: 29px;
-  /* margin-left: 10px;
-   */
 }
+
+.main .main_group .pw .input_pw {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+  background-color: white;
+}
+.main .main_group .pw .input_pw input {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  border: none;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+.main .main_group .pw .input_pw_chk {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+  background-color: white;
+}
+
+.main .main_group .pw .input_pw_chk input {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  border: none;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+.main .main_group .name .input_name {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+  background-color: white;
+}
+
+.main .main_group .name .input_name input {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  border: none;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+.main .main_group .birth .birth_input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  border: 0;
+}
+.main .main_group .birth .birth_input .year {
+  border: 1px solid #dadada;
+  background-color: white;
+  padding: 5px;
+}
+.main .main_group .birth .birth_input input {
+  width: 113px;
+  display: block;
+  position: relative;
+  height: 100%;
+  line-height: 29px;
+  border: none;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+.main .main_group .birth .birth_input .month {
+  border: 1px solid #dadada;
+  background-color: white;
+  padding: 5px;
+  margin: 0 10px;
+}
+.main .main_group .birth .birth_input .month select {
+  width: 113px;
+  display: block;
+  position: relative;
+  height: 100%;
+  line-height: 29px;
+  border: none;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+.main .main_group .birth .birth_input .day {
+  border: 1px solid #dadada;
+  background-color: white;
+  padding: 5px;
+}
+
+/* .main .main_group .birth .birth_input .year {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dadada;
+  background-color: white;
+  border: 0;
+  padding: 0;
+} */
 
 .footer {
   grid-area: footer;

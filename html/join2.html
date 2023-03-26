@@ -8,7 +8,7 @@
     <title>네이버 짭</title>
     <style>
       * {
-        outline: 1px solid green;
+        /* outline: 1px solid green; */
       }
     </style>
   </head>
@@ -26,21 +26,43 @@
           </div>
           <div class="pw">
             <h3>비밀번호</h3>
-            <span class="input_pw"><input type="text" /></span>
+            <div class="input_pw"><input type="text" /></div>
           </div>
           <div class="pw">
             <h3>비밀번호 재확인</h3>
-            <span class="input_pw_chk"><input type="text" /></span>
+            <div class="input_pw_chk"><input type="text" /></div>
           </div>
         </div>
         <div class="main_group">
           <div class="name">
             <h3>이름</h3>
-            <span><input type="text" /></span>
+            <div class="input_name"><input type="text" /></div>
           </div>
           <div class="birth">
             <h3>생년월일</h3>
-            <span><input type="text" /></span>
+            <div class="birth_input">
+              <div class="year">
+                <input type="text" placeholder="년(4자)" />
+              </div>
+              <div class="month">
+                <select name="" id="">
+                  <option value="">월</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+                  <option value="">11</option>
+                  <option value="">12</option>
+                </select>
+              </div>
+              <div class="day"><input type="text" placeholder="일" /></div>
+            </div>
           </div>
           <div class="gender">
             <div class="gender_select">

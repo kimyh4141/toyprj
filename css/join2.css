@@ -138,6 +138,7 @@ input:focus {
   width: 100%;
   height: 50px;
   border: 0;
+  margin-bottom: 40px;
 }
 .main .main_group .birth .birth_input .year {
   border: 1px solid #dadada;
@@ -180,17 +181,47 @@ input:focus {
   padding: 5px;
 }
 
-/* .main .main_group .birth .birth_input .year {
+.main .main_group .gender .gender_select {
   width: 100%;
-  height: 100%;
+  height: 30px;
+  padding: 5px;
   border: 1px solid #dadada;
   background-color: white;
+}
+.main .main_group .gender .gender_select .sel {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  border: none;
+  box-sizing: border-box;
   border: 0;
   padding: 0;
-} */
+}
+
+.main .main_group .email .input_email {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+  background-color: white;
+}
+.main .main_group .email .input_email input {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  border: none;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
 
 .footer {
   grid-area: footer;
+  margin-top: 40px;
 }
 .footer .btn_join button {
   width: 100%;
@@ -199,4 +230,7 @@ input:focus {
   color: white;
   border: none;
   padding: 5px;
+}
+select:focus {
+  outline: none;
 }

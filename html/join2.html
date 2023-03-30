@@ -23,7 +23,18 @@
         <div class="main_group">
           <div class="id">
             <h3>아이디</h3>
-            <div class="input_id"><input type="text" /></div>
+            <div class="input_id">
+              <input
+                type="text"
+                name="id"
+                id="id"
+                minlength="4"
+                maxlength="16"
+              />
+            </div>
+            <p class="err id hidden" style="display: none">
+              아이디를 입력해주세요
+            </p>
           </div>
           <div class="pw">
             <h3>비밀번호</h3>
@@ -89,5 +100,6 @@
         </div>
       </div>
     </div>
+    <script src="/js/join2.js"></script>
   </body>
 </html>
